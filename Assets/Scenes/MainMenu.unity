@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 93049486}
   - component: {fileID: 93049485}
   m_Layer: 5
-  m_Name: Controls Text
+  m_Name: CreditsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,8 +181,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Stephen Foster - Gameplay Programmer / Designer \n\nIsaiah McLain - Gameplay
-    Programmer / Designer \n\nAdditonal scolling credits here for assets"
+  m_text: 'Stephen Foster - AI, Collisions, Gameplay Loop, Physics
+
+
+    Isaiah McLain
+    - Main Menu, Credits, Controls, Level Design, Gameplay Loop
+
+
+    Additonal scolling
+    credits here for assets'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d393f12bd75574ef991a7a2c74b29c69, type: 2}
   m_sharedMaterial: {fileID: 21623678745554260, guid: d393f12bd75574ef991a7a2c74b29c69,
@@ -211,8 +218,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 6
-  m_fontSizeBase: 6
+  m_fontSize: 5
+  m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
