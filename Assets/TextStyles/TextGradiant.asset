@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TextGradiant
   m_EditorClassIdentifier: 
   colorMode: 3
-  topLeft: {r: 0, g: 0.23951167, b: 0.735849, a: 1}
-  topRight: {r: 0, g: 0.2392157, b: 0.7372549, a: 1}
+  topLeft: {r: 0, g: 0, b: 0, a: 1}
+  topRight: {r: 0, g: 0, b: 0, a: 1}
   bottomLeft: {r: 1, g: 1, b: 1, a: 1}
   bottomRight: {r: 1, g: 1, b: 1, a: 1}
