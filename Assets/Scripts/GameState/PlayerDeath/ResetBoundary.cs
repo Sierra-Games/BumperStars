@@ -15,5 +15,9 @@ public class ResetBoundary : MonoBehaviour
             // For now we just reload the level
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
         }
+        else if (obj.tag == "Agent")
+        {
+            Destroy(obj.transform.gameObject);
+        }
     }
 }
