@@ -15,7 +15,7 @@ public class FenceFixer : MonoBehaviour
                 GameObject fence = this.transform.GetChild(i).gameObject.transform.GetChild(0).gameObject;
                 Bounds bounds = fence.GetComponent<MeshCollider>().bounds;
                 Debug.Log(fence.name);
-                fence.transform.localScale = new Vector3(1.0f, .12f, 1.0f);
+                fence.transform.localScale = new Vector3(1.0f, .1f, 1.0f);
                 //bounds.size = new Vector3(bounds.size.x, bounds.size.y * 0.25f, bounds.size.z * 1.0f);
             }
             catch { }
