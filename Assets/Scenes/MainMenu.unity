@@ -1159,7 +1159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.0000012, y: 124.999985}
+  m_AnchoredPosition: {x: 1.0000012, y: 420}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555469546
@@ -1183,11 +1183,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Stephen Foster - AI, Physics, Collisions, Gameplay Loop, \n\nIsaiah McLain
-    - Main Menu, Credits, Level Design, Gameplay Loop, Music\n\nAdditonal scolling
-    credits here for assets"
+    - Main Menu, Credits, Level Design, Gameplay Loop, Music\n\nUnity Kart Assets:
+    https://assetstore.unity.com/packages/3d/vehicles/karting-microgame-urp-150956\n\nPlayground
+    Assets: https://assetstore.unity.com/packages/3d/environments/playground-low-poly-191533\n\nLava
+    Asset: https://assetstore.unity.com/packages/2d/textures-materials/stylized-lava-materials-180943\n\nSkybox
+    Asset: https://assetstore.unity.com/packages/2d/textures-materials/sky/free-stylized-skybox-212257\n\nToy
+    Train Asset: https://assetstore.unity.com/packages/3d/props/children-s-wooden-toys-free-train-pack-179951\n\nSpecial
+    Thanks to Sushil Louis, Joshua Dahl, and Crystal Atoz for grading and giving
+    feedback on the project as well as the CS 381 2023 class for giving active feedback
+    during development. "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d393f12bd75574ef991a7a2c74b29c69, type: 2}
+  m_sharedMaterial: {fileID: 21623678745554260, guid: d393f12bd75574ef991a7a2c74b29c69,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1217,8 +1225,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3184,7 +3192,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2101720164}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.16666669
+  m_Size: 0.05555556
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3434,7 +3442,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_SizeDelta: {x: 0, y: 900}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1913454296
 GameObject:
@@ -3615,7 +3623,7 @@ RectTransform:
   m_Father: {fileID: 1883279620}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.8333333}
+  m_AnchorMin: {x: 0, y: 0.9444444}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
