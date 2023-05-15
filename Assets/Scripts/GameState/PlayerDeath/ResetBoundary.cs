@@ -18,7 +18,9 @@ public class ResetBoundary : MonoBehaviour
         {
             // Doc 1 ai from our ai count 
             AIDeathTracker.inst.aiCount--; 
-            Destroy(obj.transform.gameObject);
+            //Destroy(obj.transform.gameObject);
+            //Let's just disable for now, lots of runtime exceptions due to active MLAgent for some reason
+            obj.transform.gameObject.SetActive(false);
         }
     }
 }
