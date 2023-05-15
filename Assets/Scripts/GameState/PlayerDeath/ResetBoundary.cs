@@ -16,6 +16,8 @@ public class ResetBoundary : MonoBehaviour
         }
         else if (obj.tag == "Agent")
         {
+            // Doc 1 ai from our ai count 
+            AIDeathTracker.inst.aiCount--; 
             Destroy(obj.transform.gameObject);
         }
     }

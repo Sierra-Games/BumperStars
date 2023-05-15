@@ -8,6 +8,8 @@ public enum GameState{Play, Won, Lost}
 
 public class GameFlowManager : MonoBehaviour
 {
+    public static GameFlowManager inst; 
+
     [Header("Parameters")]
     [Tooltip("Duration of the fade-to-black at the end of the game")]
     public float endSceneLoadDelay = 3f;
@@ -47,6 +49,11 @@ public class GameFlowManager : MonoBehaviour
     float m_TimeLoadEndGameScene;
     string m_SceneToLoad;
     float elapsedTimeBeforeEndScene = 0;
+
+    private void Awake()
+    {
+        inst = this; 
+    }
 
     void Start()
     {
