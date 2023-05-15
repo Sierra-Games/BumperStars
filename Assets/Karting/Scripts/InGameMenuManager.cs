@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InGameMenuManager : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class InGameMenuManager : MonoBehaviour
     public Toggle framerateToggle;
     [Tooltip("GameObject for the controls")]
     public GameObject controlImage;
+    [Tooltip("Return To Main Menu")]
+    public Button quitToMenu; 
 
     //PlayerInputHandler m_PlayerInputsHandler;
     FramerateCounter m_FramerateCounter;
@@ -108,5 +111,11 @@ public class InGameMenuManager : MonoBehaviour
     public void OnShowControlButtonClicked(bool show)
     {
         controlImage.SetActive(show);
+    }
+
+    // Returns player to main menu from pause menu
+    public void OnQuitButtonClicked()
+    {
+        SceneManager.LoadScene(0);
     }
 }
