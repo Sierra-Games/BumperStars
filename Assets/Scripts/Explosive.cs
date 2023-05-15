@@ -1,3 +1,4 @@
+using KartGame.AI;
 using UnityEngine;
 public class Explosive : MonoBehaviour
 {
@@ -36,8 +37,8 @@ public class Explosive : MonoBehaviour
             if (this.gameObject.layer == 11)
             {
                 var rb = collision.gameObject.GetComponent<Rigidbody>();
-                rb.AddForceAtPosition(collision.impulse * _bounceForce, collision.GetContact(0).point);
-                //rb.AddExplosionForce(_explosionForce * 0.04f, collision.GetContact(0).point, _explosionRadius, _upwardsModifier, ForceMode.Acceleration);
+                rb.AddForceAtPosition(Vector3.ClampMagnitude(collision.impulse * _bounceForce, 200000.0f), collision.GetContact(0).point);
+                rb.AddExplosionForce(_explosionForce * 0.01f, collision.GetContact(0).point, _explosionRadius, _upwardsModifier, ForceMode.Acceleration);
             }
             else
             {

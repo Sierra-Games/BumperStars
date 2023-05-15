@@ -17,7 +17,6 @@ public class CheckpointCollector : MonoBehaviour
     }
 
     public static CheckpointCollector Instance;
-    [SerializeField]
     public List<BoxCollider> Checkpoints = new List<BoxCollider>();
     public Dictionary<string, Checkpoint> checkpointInfo = new Dictionary<string, Checkpoint>();
 
@@ -57,5 +56,6 @@ public class CheckpointCollector : MonoBehaviour
 
             checkpointInfo.Add(name, checkpoint);
         }
+        
     }
 }

@@ -238,6 +238,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
       propertyPath: _explosionForce
@@ -2586,6 +2591,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
       propertyPath: _explosionForce
@@ -2836,6 +2846,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
@@ -3608,6 +3623,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
       propertyPath: _explosionForce
@@ -4310,6 +4330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
@@ -5764,6 +5789,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
       propertyPath: _explosionForce
@@ -5938,6 +5968,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KartClassic_MLAgent (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361162182259646437, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7683116878114304770, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
@@ -6791,6 +6826,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
@@ -9405,6 +9445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
@@ -12770,6 +12815,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
       propertyPath: _explosionForce
@@ -13133,6 +13183,7 @@ MonoBehaviour:
   _explosionRadius: 5
   _explosionForce: 500
   _upwardsModifier: 1000
+  _bounceForce: 1000
 --- !u!1001 &1630728722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13688,6 +13739,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
       propertyPath: _explosionForce
@@ -13926,18 +13982,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d778a1ac13174a4a9f6ca68aedb6487, type: 3}
---- !u!114 &1738154445 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2672087689449875208, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
-    type: 3}
-  m_PrefabInstance: {fileID: 801702232}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9e63a346cf50814daeac6fff004cb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1740773986 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6942117983716819257, guid: d76604d888e1f2e4a9ea00687d223934,
@@ -14228,6 +14272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
@@ -14889,6 +14938,7 @@ MonoBehaviour:
   _explosionRadius: 5
   _explosionForce: 1000
   _upwardsModifier: 1
+  _bounceForce: 1000
 --- !u!114 &1874400362 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2711322338983342520, guid: 19954de30401f73428254541a9ad156e,
@@ -15040,7 +15090,6 @@ MonoBehaviour:
   - {fileID: 5209091469121232341}
   - {fileID: 1941317201}
   - {fileID: 1959399223}
-  - {fileID: 1738154445}
   - {fileID: 1987130497}
   - {fileID: 1978621920}
   - {fileID: 1470535917}
@@ -15635,6 +15684,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
       propertyPath: _explosionForce
@@ -15885,6 +15939,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}
@@ -17100,6 +17159,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4810912518023495582, guid: 19954de30401f73428254541a9ad156e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4810912518991602691, guid: 19954de30401f73428254541a9ad156e,
         type: 3}
       propertyPath: m_Name
@@ -17188,7 +17252,7 @@ PrefabInstance:
     - target: {fileID: 4810912518991602694, guid: 19954de30401f73428254541a9ad156e,
         type: 3}
       propertyPath: baseStats.TopSpeed
-      value: 40
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4810912518991602694, guid: 19954de30401f73428254541a9ad156e,
         type: 3}
@@ -17521,6 +17585,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900005646939646119, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
+        type: 3}
+      propertyPath: baseStats.TopSpeed
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3214840320729403797, guid: 5d778a1ac13174a4a9f6ca68aedb6487,
         type: 3}

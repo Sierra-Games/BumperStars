@@ -3,6 +3,9 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
 using Random = UnityEngine.Random;
 
 namespace KartGame.AI
@@ -96,11 +99,17 @@ namespace KartGame.AI
 
         bool m_EndEpisode;
         float m_LastAccumulatedReward;
-
+        Vector3 lastPosition;
+        float notMovingTimer = 0.0f;
+        public bool turn = false;
+        public Vector3 cpPos;
+        public Quaternion cpRot;
+        public int lives = 3;
         void Awake()
         {
             m_Kart = GetComponent<ArcadeKart>();
             if (AgentSensorTransform == null) AgentSensorTransform = transform;
+            lastPosition = this.transform.position;
         }
 
         void Start()
@@ -109,10 +118,13 @@ namespace KartGame.AI
             OnEpisodeBegin();
 
             if (Mode == AgentMode.Inferencing) m_CheckpointIndex = InitCheckpointIndex;
+            cpPos= transform.position;
+            cpRot= transform.rotation;
         }
 
         void Update()
         {
+            
             if (m_EndEpisode)
             {
                 m_EndEpisode = false;
@@ -120,10 +132,40 @@ namespace KartGame.AI
                 EndEpisode();
                 OnEpisodeBegin();
             }
+            
         }
 
         void LateUpdate()
         {
+            float dist = Vector3.Distance(lastPosition, this.transform.position);
+            lastPosition = this.transform.position;
+            if (dist < 0.1f)
+            {
+                notMovingTimer += Time.deltaTime;
+            }
+            else
+            {
+                notMovingTimer = 0;
+            }
+            if (notMovingTimer > 4.0f)
+            {
+                transform.rotation = cpRot;
+                transform.position = cpPos;
+                m_Kart.Rigidbody.velocity = default;
+                m_Acceleration = false;
+                m_Brake = false;
+                m_Steering = 0f;
+            }
+            if (turn)
+            {
+                transform.rotation = cpRot;
+                transform.position = cpPos;
+                m_Kart.Rigidbody.velocity = default;
+                m_Acceleration = false;
+                m_Brake = false;
+                m_Steering = 0f;
+                turn = false;
+            }
             switch (Mode)
             {
                 case AgentMode.Inferencing:
@@ -250,11 +292,11 @@ namespace KartGame.AI
             var nextCollider = Colliders[next];
             var direction = (nextCollider.transform.position - m_Kart.transform.position).normalized;
             var reward = Vector3.Dot(m_Kart.Rigidbody.velocity.normalized, direction);
-
+            var normalizedReward = (-1.0f + (reward / 2.0f) * 2.0f);
             if (ShowRaycasts) Debug.DrawRay(AgentSensorTransform.position, m_Kart.Rigidbody.velocity, Color.blue);
 
             // Add rewards if the agent is heading in the right direction
-            AddReward(reward * TowardsCheckpointReward);
+            AddReward(normalizedReward * TowardsCheckpointReward);
             AddReward((m_Acceleration && !m_Brake ? 1.0f : 0.0f) * AccelerationReward);
             AddReward(m_Kart.LocalSpeed() * SpeedReward);
         }

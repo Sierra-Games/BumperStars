@@ -1,5 +1,7 @@
+using KartGame.AI;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class TrackProgress : MonoBehaviour
@@ -35,6 +37,20 @@ public class TrackProgress : MonoBehaviour
         CheckpointCollector.Checkpoint cp = new CheckpointCollector.Checkpoint();
         if(CheckpointCollector.Instance.checkpointInfo.TryGetValue(checkpointName, out cp))
         {
+            if (this.tag == "Player")
+            {
+                Debug.Log(cp.id);
+            }
+            if ((cp.id < lastCheckpointID && (cp.id != 0)) || ((lastCheckpointID == -1) && cp.id > 0))
+            {
+                KartAgent ka;
+                if(TryGetComponent<KartAgent>(out ka))
+                {
+                    ka.cpPos = cp.transform.position;
+                    ka.cpRot = cp.transform.rotation;
+                    ka.turn = true;
+                }
+            }
             if (cp.id != lastCheckpointID)
             {
                 //only if we are not passing the start gate for the first time
@@ -43,6 +59,13 @@ public class TrackProgress : MonoBehaviour
                     lastCheckpointID = cp.id;
                     lastCheckpointPosition = cp.transform.position;
                     lastCheckpointRotation = cp.transform.rotation;
+
+                    KartAgent ka;
+                    if (TryGetComponent<KartAgent>(out ka))
+                    {
+                        ka.cpPos = cp.transform.position;
+                        ka.cpRot = cp.transform.rotation;
+                    }
 
                     if (cp.id == 0)
                     {
@@ -53,7 +76,9 @@ public class TrackProgress : MonoBehaviour
                 {
                     //start
                     if (cp.id == 0)
+                    {
                         lastCheckpointID = 0;
+                    }
                 }
             }
         }
