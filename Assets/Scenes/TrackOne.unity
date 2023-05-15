@@ -13133,6 +13133,7 @@ MonoBehaviour:
   _explosionRadius: 5
   _explosionForce: 500
   _upwardsModifier: 1000
+  _bounceForce: 1000
 --- !u!1001 &1630728722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14889,6 +14890,7 @@ MonoBehaviour:
   _explosionRadius: 5
   _explosionForce: 1000
   _upwardsModifier: 1
+  _bounceForce: 1000
 --- !u!114 &1874400362 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2711322338983342520, guid: 19954de30401f73428254541a9ad156e,
@@ -16809,38 +16811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dd083327d93184b90549922876dafc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Checkpoints:
-  - {fileID: 1409988604}
-  - {fileID: 1557209414}
-  - {fileID: 1756447450}
-  - {fileID: 775397590}
-  - {fileID: 1476333369}
-  - {fileID: 2118411692}
-  - {fileID: 1930279828}
-  - {fileID: 630182748}
-  - {fileID: 1982874852}
-  - {fileID: 1836615339}
-  - {fileID: 934878388}
-  - {fileID: 1442885006}
-  - {fileID: 1256247939}
-  - {fileID: 1612416351}
-  - {fileID: 1279708894}
-  - {fileID: 1417923805}
-  - {fileID: 1781924737}
-  - {fileID: 1852326703}
-  - {fileID: 1460211953}
-  - {fileID: 1969284796}
-  - {fileID: 2038106231}
-  - {fileID: 1204899945}
-  - {fileID: 1805295863}
-  - {fileID: 959370021}
-  - {fileID: 1640427434}
-  - {fileID: 1947572446}
-  - {fileID: 853570543}
-  - {fileID: 571571416}
-  - {fileID: 794738194}
-  - {fileID: 1749017509}
-  - {fileID: 1542338335}
+  Checkpoints: []
 --- !u!4 &2073649134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7683116878114304770, guid: 5d778a1ac13174a4a9f6ca68aedb6487,

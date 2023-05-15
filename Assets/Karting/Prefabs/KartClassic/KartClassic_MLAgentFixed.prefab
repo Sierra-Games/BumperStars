@@ -3734,7 +3734,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &2900005646939646119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4041,6 +4041,7 @@ MonoBehaviour:
   lastCheckpointRotation: {x: 0, y: 0, z: 0, w: 0}
   lastCheckpointID: 0
   currentLap: 0
+  place: 0
 --- !u!65 &2351202037875212005
 BoxCollider:
   m_ObjectHideFlags: 0
