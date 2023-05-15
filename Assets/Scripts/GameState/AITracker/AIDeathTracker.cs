@@ -22,6 +22,7 @@ public class AIDeathTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Our ai count is dropped in ResetBoundary.cs 
         if (aiCount == 0)
         {
             SceneManager.LoadScene(winScene); 
