@@ -13,8 +13,16 @@ public class FenceFixer : MonoBehaviour
             try
             {
                 GameObject fence = this.transform.GetChild(i).gameObject.transform.GetChild(0).gameObject;
-                Bounds bounds = fence.GetComponent<MeshCollider>().bounds;
                 fence.transform.localScale = new Vector3(1.0f, 0.1f, 1.0f);
+                fence.AddComponent(System.Type.GetType("Explosive"));
+
+                Explosive e = fence.GetComponent<Explosive>();
+                e.SetExplosionForce(1000);
+                e.SetTriggerForce(0.5f);
+                e.SetExplosionRadius(5.0f);
+                e.setUpwardsModifier(1000f);
+                e.setBounceForce(100f);
+
             }
             catch { }
         }
