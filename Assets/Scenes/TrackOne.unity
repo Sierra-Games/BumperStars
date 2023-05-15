@@ -15051,6 +15051,20 @@ MonoBehaviour:
   - {fileID: 835248686}
   - {fileID: 1755263129}
   - {fileID: 2011548963}
+  LapsUntilMusicSpeedUp: 2
+--- !u!114 &1896683183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896683166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517a093705590d7439d679b2da282943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loseScene: LoseScene
 --- !u!1 &1917165976
 GameObject:
   m_ObjectHideFlags: 0

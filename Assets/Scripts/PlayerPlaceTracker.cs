@@ -6,6 +6,7 @@ public class PlayerPlaceTracker : MonoBehaviour
 {
     public List<TrackProgress> playersPlace;
     public static PlayerPlaceTracker inst;
+    public int LapsUntilMusicSpeedUp; 
 
     private void Awake()
     {
@@ -33,6 +34,14 @@ public class PlayerPlaceTracker : MonoBehaviour
         // to iterate through the loop to give our player a place) 
         foreach (TrackProgress player in playersPlace)
         {
+            // We also check to see if anyone is on the last lap and if so we speed up the music
+            if (player.GetCurrentLap() > LapsUntilMusicSpeedUp)
+            {
+                // Grab our audio player of the back ground music and increase the speed of it's playback 
+                // only for the last lap 
+                AudioSource pitchMusicUp = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+                pitchMusicUp.pitch = 1.3f;
+            }
             player.place = place;
             // Prevents place ever being 0 for the player 
             if (place > 1)
