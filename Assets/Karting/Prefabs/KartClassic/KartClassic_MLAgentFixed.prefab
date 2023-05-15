@@ -3684,12 +3684,13 @@ GameObject:
   - component: {fileID: 2900005646939646115}
   - component: {fileID: 2900005646939646136}
   - component: {fileID: 2900005646939646118}
-  - component: {fileID: 6299222309945602431}
   - component: {fileID: 7992178765870368708}
   - component: {fileID: 4248429380822552373}
   - component: {fileID: 1866475584796194668}
   - component: {fileID: 3214840320729403797}
   - component: {fileID: 810770434489338137}
+  - component: {fileID: 2672087689449875208}
+  - component: {fileID: 2351202037875212005}
   m_Layer: 2
   m_Name: KartClassic_MLAgentFixed
   m_TagString: Agent
@@ -3851,19 +3852,6 @@ MonoBehaviour:
   TurnInputName: Horizontal
   AccelerateButtonName: Accelerate
   BrakeButtonName: Brake
---- !u!114 &6299222309945602431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4361162182259646437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a63be40ca1efb5d47977c6b2418d6aec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LastCheckpoint: {x: 0, y: 0, z: 0}
 --- !u!114 &7992178765870368708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4036,6 +4024,35 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 379c82acbb20c4747b42575fb9e5011e, type: 3}
+--- !u!114 &2672087689449875208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361162182259646437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e63a346cf50814daeac6fff004cb3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastCheckpointPosition: {x: 0, y: 0, z: 0}
+  lastCheckpointRotation: {x: 0, y: 0, z: 0, w: 0}
+  lastCheckpointID: 0
+  currentLap: 0
+--- !u!65 &2351202037875212005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361162182259646437}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &7348853804579335728
 GameObject:
   m_ObjectHideFlags: 0

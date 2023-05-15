@@ -20,7 +20,7 @@ public class Explosive : MonoBehaviour
 
                     if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Agent")
                     {
-                        Debug.Log(collision.gameObject.ToString());
+                        //Debug.Log(collision.gameObject.ToString());
                         rb.AddForceAtPosition(collision.relativeVelocity * _explosionForce, collision.GetContact(0).point);
                         rb.AddExplosionForce(_explosionForce * 0.04f, collision.GetContact(0).point, _explosionRadius, _upwardsModifier, ForceMode.Acceleration);
                     }

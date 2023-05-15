@@ -16,7 +16,9 @@ public class ResetBoundary : MonoBehaviour
         }
         else if (obj.tag == "Agent")
         {
-            Destroy(obj.transform.gameObject);
+            //Destroy(obj.transform.gameObject);
+            //Let's just disable for now, lots of runtime exceptions due to active MLAgent for some reason
+            obj.transform.gameObject.SetActive(false);
         }
     }
 }

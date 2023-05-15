@@ -18,9 +18,26 @@ public class UpdatePlayerLastCheckpoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        GameObject obj = other.gameObject;
+        if (obj.tag == "Player" || obj.tag == "Agent")
         {
-            PlayerController.Instance.LastCheckpoint =this.transform.position;
+            TrackProgress tp;
+            if (obj.tag == "Agent")
+            {
+                if (obj.transform.TryGetComponent<TrackProgress>(out tp))
+                {
+
+                    tp.PassCheckpoint(this.name);
+                }
+            }
+            else
+            {
+                if (obj.transform.root.TryGetComponent<TrackProgress>(out tp))
+                {
+
+                    tp.PassCheckpoint(this.name);
+                }
+            } 
         }
     }
 }
