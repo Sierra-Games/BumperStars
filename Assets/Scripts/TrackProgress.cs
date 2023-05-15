@@ -14,8 +14,10 @@ public class TrackProgress : MonoBehaviour
     private int lastCheckpointID;
     [SerializeField]
     private int currentLap;
+    [SerializeField]
+    public int place;
 
-    
+
 
     // Start is called before the first frame update
     void Start()

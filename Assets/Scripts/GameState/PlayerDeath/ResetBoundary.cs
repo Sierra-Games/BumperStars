@@ -17,7 +17,9 @@ public class ResetBoundary : MonoBehaviour
         else if (obj.tag == "Agent")
         {
             // Doc 1 ai from our ai count 
-            AIDeathTracker.inst.aiCount--; 
+            AIDeathTracker.inst.aiCount--;
+
+            PlayerPlaceTracker.inst.playersPlace.Remove(obj.GetComponent<TrackProgress>()); 
             //Destroy(obj.transform.gameObject);
             //Let's just disable for now, lots of runtime exceptions due to active MLAgent for some reason
             obj.transform.gameObject.SetActive(false);
