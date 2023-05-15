@@ -56,6 +56,11 @@ public class ObjectiveCompleteLaps : Objective
                 ? "One " + targetName + " left"
                 : string.Empty;
             UpdateObjective(string.Empty, GetUpdatedCounterAmount(), notificationText);
+
+            // Grab our audio player of the back ground music and increase the speed of it's playback 
+            // only for the last lap 
+            AudioSource pitchMusicUp = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+            pitchMusicUp.pitch = 1.3f; 
         }
         else if (targetRemaining > 1)
         {
