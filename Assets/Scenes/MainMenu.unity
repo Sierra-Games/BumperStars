@@ -1327,8 +1327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "WASD - Move Kart \n\nSpace - Handbrake/Drift (to be added)\n\nESC - Pause
-    Game (To be added)"
+  m_text: "WASD - Move Kart \n\nTAB - Pause Game "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d393f12bd75574ef991a7a2c74b29c69, type: 2}
   m_sharedMaterial: {fileID: 21623678745554260, guid: d393f12bd75574ef991a7a2c74b29c69,
