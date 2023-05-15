@@ -19,6 +19,7 @@ public class ResetBoundary : MonoBehaviour
             // Doc 1 ai from our ai count 
             AIDeathTracker.inst.aiCount--;
 
+            // Remove the ai from our list of players, this makes our place tracking way more accurate 
             PlayerPlaceTracker.inst.playersPlace.Remove(obj.GetComponent<TrackProgress>()); 
             //Destroy(obj.transform.gameObject);
             //Let's just disable for now, lots of runtime exceptions due to active MLAgent for some reason
